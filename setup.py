@@ -7,7 +7,7 @@ setup(
     version="0.1.0",
     description="Low bandwidth DoS tool.",
     author ="Fenil Om Ayush Aditi",
-    url="https://github.com/gkbrk/slowloris",
+    url="https://github.com/Fenil2511/ofaa-ddos-tool",
     keywords=["dos", "http", "ofaa"],
     license="MIT",
 )

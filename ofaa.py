@@ -164,7 +164,7 @@ def init_socket(ip: str):
     return s
 
 
-def slowloris_iteration():
+def ofaa_iteration():
     logging.info("Sending keep-alive headers...")
     logging.info("Socket count: %s", len(list_of_sockets))
 
@@ -211,12 +211,12 @@ def main():
 
     while True:
         try:
-            slowloris_iteration()
+            ofaa_iteration()
         except (KeyboardInterrupt, SystemExit):
-            logging.info("Stopping Slowloris")
+            logging.info("Stopping ofaa")
             break
         except Exception as e:
-            logging.debug("Error in Slowloris iteration: %s", e)
+            logging.debug("Error in ofaa iteration: %s", e)
         logging.debug("Sleeping for %d seconds", args.sleeptime)
         time.sleep(args.sleeptime)
 
